@@ -1,11 +1,6 @@
 #include <stdio.h>
 
-int main()
-
-{
-    int coluna =0, line = 0;
-
-
+int funcao(){
     FILE *arq;
     char Linha[100];
     char *result;
@@ -33,11 +28,28 @@ int main()
 
 
     printf("\n");
+
+    return 0;
+}
+
+int main()
+
+{
+    int coluna =0, line = 0;
+    int men = 2;
+
+
+    
+    
         do{
             printf(" | ");
 
-            while (line < 8) {
-                if ( (coluna >0 && coluna <4) && (line >1 && line <6) )
+            if (coluna == 2){
+                printf("  Digite 1 para ler o arquivo e 0 para sair..          *");
+            }
+
+            while (line < 19) {
+                if ( (coluna >0 && coluna <4) && (line >0 && line <= 18) || coluna == 2 )
                     printf("   ");
                 else {
                     printf(" * ");
@@ -45,12 +57,17 @@ int main()
                 line ++;
             }
 
-            printf(" |");
+           // printf(" |");
             printf("\n");
             coluna ++;
             line = 0;
         }while (coluna < 5);
-	
+	       scanf("%i",&men);
+
+           if(men == 1){
+            funcao();
+           }
+
         printf("\n");
 	return 0;
 }
