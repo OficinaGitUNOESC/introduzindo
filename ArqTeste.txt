@@ -1,4 +1,4 @@
 testando leitura para o git. 
 - Alterado por Marcos Flamia
-
-Miguel alterando tambem
+- Miguel alterando tambem
+- Ângelo Pietro
