@@ -1,3 +1,2 @@
 testando leitura para o git. 
-
-Miguel escrevendo
+- Alterado por Marcos Flamia
